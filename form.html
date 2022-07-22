@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #11192E;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #BBEDEC;
+}
+
+.box h1 {
+    color: #BBEDEC;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"],
+.box input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #BBEDEC;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #106332;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: #2ecc71;
+}
+
+</style>
+<body>
+    
+    <div class="box">
+			
+        <form action="" method="POST">
+            <h1>Fill in</h1>
+            <input type="text" name="name" placeholder="Name" required/>
+            <input type="text" name="surname" placeholder="Surname" required/>
+            <input type="email" name="email" placeholder="Email" required/>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+            
+        </div>
+
+</body>
+</html>
